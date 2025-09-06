@@ -30,7 +30,7 @@ struct ExpenseListView: View {
         if !searchText.isEmpty {
             filtered = filtered.filter { expense in
                 expense.category.rawValue.localizedCaseInsensitiveContains(searchText) ||
-                (expense.notes.localizedCaseInsensitiveContains(searchText) ?? false)
+                (expense.notes.localizedCaseInsensitiveContains(searchText))
             }
         }
 
