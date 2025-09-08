@@ -15,7 +15,11 @@ struct ByeMoneyApp: App {
 
     init() {
         do {
-            container = try ModelContainer(for: Expense.self)
+            let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.dev.erikflores.ByeMoney")?.appendingPathComponent("ByeMoney.sqlite")
+            container = try ModelContainer(
+                for: Expense.self,
+                configurations: ModelConfiguration(url: storeURL!)
+            )
         } catch {
             fatalError("Failed to create ModelContainer for Expense")
         }
@@ -31,7 +35,15 @@ struct ByeMoneyApp: App {
                 }
         }
     }
+
+    private func getModelConfiguration() -> ModelConfiguration {
+        // Si usas App Groups, descomenta y configura:
+        let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.dev.erikflores.ByeMoney")?.appendingPathComponent("ByeMoney.sqlite")
+        return ModelConfiguration(url: storeURL!)
+    }
 }
+
+
 
 extension Notification.Name {
     static let openNewExpense = Notification.Name("openNewExpense")

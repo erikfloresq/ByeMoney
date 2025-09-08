@@ -31,7 +31,8 @@ class ExpenseManager: ObservableObject {
 
     private func setupModelContainer() {
         do {
-            modelContainer = try ModelContainer(for: Expense.self)
+            let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.dev.erikflores.ByeMoney")?.appendingPathComponent("ByeMoney.sqlite")
+            modelContainer = try ModelContainer(for: Expense.self, configurations: ModelConfiguration(url: storeURL!))
             modelContext = ModelContext(modelContainer!)
         } catch {
             print("Error setting up ModelContainer: \(error)")
@@ -88,7 +89,7 @@ class ExpenseManager: ObservableObject {
 
     /// Obtiene el promedio de gastos diarios
     func getAverageDailyExpense() -> Double {
-        guard let context = modelContext,
+        guard let _ = modelContext,
               let firstExpenseDate = getFirstExpenseDate() else { return 0.0 }
 
         let daysSinceFirstExpense = Calendar.current.dateComponents([.day],
@@ -228,6 +229,71 @@ extension ExpenseManager {
             return categoryTotals
         } catch {
             print("Error fetching category data for widget: \(error)")
+            return []
+        }
+    }
+}
+
+extension ExpenseManager {
+
+    /// Agrega un nuevo gasto al contexto
+    @MainActor
+    func addExpense(_ expense: Expense) async {
+        guard let context = modelContext else { return }
+
+        context.insert(expense)
+
+        do {
+            try context.save()
+            await refreshData()
+        } catch {
+            print("Error saving expense: \(error)")
+        }
+    }
+
+    /// Elimina un gasto específico
+    @MainActor
+    func deleteExpense(_ expense: Expense) async {
+        guard let context = modelContext else { return }
+
+        context.delete(expense)
+
+        do {
+            try context.save()
+            await refreshData()
+        } catch {
+            print("Error deleting expense: \(error)")
+        }
+    }
+
+    /// Obtiene los totales por categoría ordenados de mayor a menor
+    @MainActor
+    func getCategoryTotals() async -> [(category: ExpenseCategory, total: Double)] {
+        var categoryTotals: [(category: ExpenseCategory, total: Double)] = []
+
+        for category in ExpenseCategory.allCases {
+            let total = getTotalByCategory(category)
+            if total > 0 {
+                categoryTotals.append((category: category, total: total))
+            }
+        }
+
+        return categoryTotals.sorted { $0.total > $1.total }
+    }
+
+    /// Obtiene todos los gastos (para compatibilidad con intents)
+    @MainActor
+    func getAllExpenses() -> [Expense] {
+        guard let context = modelContext else { return [] }
+
+        let descriptor = FetchDescriptor<Expense>(
+            sortBy: [SortDescriptor(\.date, order: .reverse)]
+        )
+
+        do {
+            return try context.fetch(descriptor)
+        } catch {
+            print("Error fetching all expenses: \(error)")
             return []
         }
     }

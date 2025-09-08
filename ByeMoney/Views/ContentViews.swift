@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $deepLinkManager.selectedTab) {
             // Tab 1: Lista de Gastos
-            NavigationView {
+            NavigationStack {
                 ExpenseListView(
                     categoryFilter: categoryFilter,
                     selectedExpenseId: $selectedExpenseId
@@ -31,7 +31,7 @@ struct ContentView: View {
             .tag(0)
 
             // Tab 2: Gráficos
-            NavigationView {
+            NavigationStack {
                 ChartView()
             }
             .tabItem {

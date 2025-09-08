@@ -20,7 +20,6 @@ import Combine
  byemoney://category/Entretenimiento
  */
 
-@MainActor
 class DeepLinkManager: ObservableObject {
     @Published var destination: DeepLinkDestination = .none
     @Published var selectedTab: Int = 0

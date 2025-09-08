@@ -111,12 +111,7 @@ struct Provider: TimelineProvider {
 
     private func getModelConfiguration() -> ModelConfiguration {
         // Si usas App Groups, descomenta y configura:
-        /*
-        let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.tuapp.byemoney")?.appendingPathComponent("ByeMoney.sqlite")
+        let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.dev.erikflores.ByeMoney")?.appendingPathComponent("ByeMoney.sqlite")
         return ModelConfiguration(url: storeURL!)
-        */
-
-        // Configuración por defecto
-        return ModelConfiguration()
     }
 }

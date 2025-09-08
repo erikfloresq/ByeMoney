@@ -1,0 +1,494 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "¿Estás seguro de que quieres eliminar este gasto?" : {
+
+    },
+    "%.0f%%" : {
+
+    },
+    "%.1f%%" : {
+
+    },
+    "%@" : {
+
+    },
+    "%lld gastos" : {
+
+    },
+    "$" : {
+
+    },
+    "$%.0f" : {
+
+    },
+    "$%.2f" : {
+
+    },
+    "0.00" : {
+
+    },
+    "Acumulado" : {
+
+    },
+    "Add a new expense to ByeMoney" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar un gasto en ByeMoney"
+          }
+        }
+      }
+    },
+    "Add Expense" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar gasto"
+          }
+        }
+      }
+    },
+    "Add expense of ${amount} for ${category}" : {
+
+    },
+    "Add Expense with amount" : {
+
+    },
+    "Agrega tu primer gasto para ver análisis" : {
+
+    },
+    "All Time" : {
+
+    },
+    "Amount" : {
+
+    },
+    "Análisis de Gastos" : {
+
+    },
+    "Are you sure you want to delete: %@ for %@? Run the shortcut again with confirmation to delete." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Are you sure you want to delete: %1$@ for %2$@? Run the shortcut again with confirmation to delete."
+          }
+        }
+      }
+    },
+    "Budget Status" : {
+
+    },
+    "Buscar gastos..." : {
+
+    },
+    "ByeMoney" : {
+
+    },
+    "Cancelar" : {
+
+    },
+    "Categoria" : {
+
+    },
+    "Categoría" : {
+
+    },
+    "Categorias" : {
+
+    },
+    "Category" : {
+
+    },
+    "Charts" : {
+
+    },
+    "Check Budget Status" : {
+
+    },
+    "Check budget status with ${monthlyBudget} monthly limit" : {
+
+    },
+    "Check how much money you've spent in total or this month" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuanto gastaste en este mes"
+          }
+        }
+      }
+    },
+    "Check your average daily spending" : {
+
+    },
+    "Check your spending against your monthly budget" : {
+
+    },
+    "Comida" : {
+
+    },
+    "Comparación con promedio" : {
+
+    },
+    "Comparación Semanal" : {
+
+    },
+    "Compartir Categoría" : {
+
+    },
+    "Compartir Lista" : {
+
+    },
+    "Compras" : {
+
+    },
+    "Confirm Deletion" : {
+
+    },
+    "Cuentas" : {
+
+    },
+    "Daily Average" : {
+
+    },
+    "Delete last expense" : {
+
+    },
+    "Delete Last Expense" : {
+
+    },
+    "Delete last expense (confirmed)" : {
+
+    },
+    "Desglose Detallado" : {
+
+    },
+    "Detalle del Gasto" : {
+
+    },
+    "Día" : {
+
+    },
+    "Distribución por Categoría" : {
+
+    },
+    "Educación" : {
+
+    },
+    "Eliminar" : {
+
+    },
+    "Eliminar Gasto" : {
+
+    },
+    "Entretenimiento" : {
+
+    },
+    "Error" : {
+
+    },
+    "Expense" : {
+
+    },
+    "Fecha" : {
+
+    },
+    "Find out which category you spend the most money on" : {
+
+    },
+    "Gastos" : {
+
+    },
+    "Gastos Acumulados" : {
+
+    },
+    "Gastos por Categoría" : {
+
+    },
+    "Get Daily Average Spending" : {
+
+    },
+    "Get last Expenses" : {
+
+    },
+    "Get Recent Expenses" : {
+
+    },
+    "Get Top Spending Category" : {
+
+    },
+    "Get Total Spent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu gasto total"
+          }
+        }
+      }
+    },
+    "Get total spent ${timePeriod}" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu gasto total ${timePeriod}"
+          }
+        }
+      }
+    },
+    "Get Total Spent on this month" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obtener el gasto total este mes"
+          }
+        }
+      }
+    },
+    "Gráficos" : {
+
+    },
+    "Guardar Gasto" : {
+
+    },
+    "Here are your last %lld expenses:\n%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Here are your last %1$lld expenses:\n%2$@"
+          }
+        }
+      }
+    },
+    "I've added your expense of %@ for %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "I've added your expense of %1$@ for %2$@"
+          }
+        }
+      }
+    },
+    "Información del Gasto" : {
+
+    },
+    "Last expense has been deleted" : {
+
+    },
+    "Last expenses" : {
+
+    },
+    "List" : {
+
+    },
+    "Monthly Budget" : {
+
+    },
+    "Monto" : {
+
+    },
+    "No expenses to delete" : {
+
+    },
+    "No hay gastos registrados" : {
+
+    },
+    "Notas" : {
+
+    },
+    "Notas (Opcional)" : {
+
+    },
+    "Notes" : {
+
+    },
+    "Nuevo Gasto" : {
+
+    },
+    "Number of Expenses" : {
+
+    },
+    "OK" : {
+
+    },
+    "Otros" : {
+
+    },
+    "Período" : {
+
+    },
+    "Por favor ingresa un monto válido" : {
+
+    },
+    "Presentation" : {
+
+    },
+    "Promedio" : {
+
+    },
+    "Promedio: $%.0f" : {
+
+    },
+    "Recent Expenses" : {
+
+    },
+    "Remove the most recently added expense" : {
+
+    },
+    "Salud" : {
+
+    },
+    "Semana" : {
+
+    },
+    "Show expense with differents presentations" : {
+
+    },
+    "Show expenses" : {
+
+    },
+    "Show expenses in %@" : {
+
+    },
+    "Show last ${count} expenses" : {
+
+    },
+    "Show my expenses by ${presentation}" : {
+
+    },
+    "Tendencia Diaria" : {
+
+    },
+    "this month" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "este mes"
+          }
+        }
+      }
+    },
+    "This Month" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este Mes"
+          }
+        }
+      }
+    },
+    "This Week" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta Semana"
+          }
+        }
+      }
+    },
+    "Time Period" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este Periodo"
+          }
+        }
+      }
+    },
+    "Tipo" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo"
+          }
+        }
+      }
+    },
+    "Tipo de Gráfico" : {
+
+    },
+    "Top Category" : {
+
+    },
+    "Total" : {
+
+    },
+    "Total Gastado" : {
+
+    },
+    "Total Spent" : {
+
+    },
+    "Total: $%.2f" : {
+
+    },
+    "Transporte" : {
+
+    },
+    "Ver Todos" : {
+
+    },
+    "View your most recent expenses" : {
+
+    },
+    "Which expense?" : {
+
+    },
+    "You haven't recorded any expenses yet" : {
+
+    },
+    "You've spent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gastaste"
+          }
+        }
+      }
+    },
+    "You've spent %@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You've spent %1$@ %2$@"
+          }
+        }
+      }
+    },
+    "Your average daily spending is %@" : {
+
+    },
+    "Your highest spending category is %@ with %@ spent" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your highest spending category is %1$@ with %2$@ spent"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

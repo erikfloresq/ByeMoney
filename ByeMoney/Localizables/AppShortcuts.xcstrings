@@ -1,0 +1,109 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add expense to ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Add expense to ${applicationName}",
+              "Record expense in ${applicationName}",
+              "Log expense in ${applicationName}"
+            ]
+          }
+        },
+        "es" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Añadir gasto en ${applicationName}",
+              "Registrar gasto en ${applicationName}",
+              "Registrar gasto en ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Check budget in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Check budget in ${applicationName}",
+              "Budget status in ${applicationName}",
+              "How's my budget in ${applicationName}",
+              "Am I within budget in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Daily average in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Daily average in ${applicationName}",
+              "Average spending in ${applicationName}",
+              "How much do I spend per day in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "How much have I spent in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "How much have I spent in ${applicationName}",
+              "Check spending in ${applicationName}",
+              "Total expenses in ${applicationName}",
+              "What's my total in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Show recent expenses in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Show recent expenses in ${applicationName}",
+              "Latest expenses in ${applicationName}",
+              "What did I buy recently in ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Where do I spend the most in ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Where do I spend the most in ${applicationName}",
+              "Top category in ${applicationName}",
+              "Biggest expense category in ${applicationName}",
+              "What's my highest spending category in ${applicationName}"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}
