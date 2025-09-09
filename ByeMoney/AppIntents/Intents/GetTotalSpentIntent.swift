@@ -17,7 +17,9 @@ struct GetTotalSpentIntent: AppIntent {
     static var description = IntentDescription("Check how much money you've spent in total or this month")
     // deprecated
     //static var openAppWhenRun: Bool =  true
-    static var supportedModes: IntentModes = .foreground
+
+    // Con foreground nos lleva a la app
+    static var supportedModes: IntentModes = .background
 
     func perform() async throws -> some IntentResult & ShowsSnippetView {
         return await .result(

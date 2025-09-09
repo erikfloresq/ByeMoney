@@ -342,9 +342,6 @@
     "Promedio: $%.0f" : {
 
     },
-    "Recent Expenses" : {
-
-    },
     "Remove the most recently added expense" : {
 
     },
@@ -352,6 +349,9 @@
 
     },
     "Semana" : {
+
+    },
+    "Show expense" : {
 
     },
     "Show expense with differents presentations" : {
@@ -425,9 +425,6 @@
     "Tipo de Gráfico" : {
 
     },
-    "Top Category" : {
-
-    },
     "Total" : {
 
     },
@@ -435,7 +432,14 @@
 
     },
     "Total Spent" : {
-
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gasto total"
+          }
+        }
+      }
     },
     "Total: $%.2f" : {
 

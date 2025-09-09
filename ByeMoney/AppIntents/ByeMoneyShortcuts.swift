@@ -10,6 +10,7 @@ import AppIntents
 struct ByeMoneyShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         return [
+            // Open Deeplink with phrases localization
             AppShortcut(
                 intent: AddExpenseIntent(),
                 phrases: [
@@ -20,6 +21,7 @@ struct ByeMoneyShortcuts: AppShortcutsProvider {
                 shortTitle: "Add Expense",
                 systemImageName: "plus.circle"
             ),
+            // Snippet View with localization
             AppShortcut(
                 intent: GetTotalSpentIntent(),
                 phrases: [
@@ -31,27 +33,16 @@ struct ByeMoneyShortcuts: AppShortcutsProvider {
                 shortTitle: "Total Spent",
                 systemImageName: "chart.pie"
             ),
+            // Show view with selection
             AppShortcut(
-                intent: GetTopCategoryIntent(),
+                intent: ShowExpenseIntent(),
                 phrases: [
-                    "Where do I spend the most in \(.applicationName)",
-                    "Top category in \(.applicationName)",
-                    "Biggest expense category in \(.applicationName)",
-                    "What's my highest spending category in \(.applicationName)"
+                    "Show expense in \(.applicationName)"
                 ],
-                shortTitle: "Top Category",
-                systemImageName: "chart.bar"
+                shortTitle: "Show expense",
+                systemImageName: "list.bullet.circle.fill"
             ),
-            AppShortcut(
-                intent: GetRecentExpensesIntent(),
-                phrases: [
-                    "Show recent expenses in \(.applicationName)",
-                    "Latest expenses in \(.applicationName)",
-                    "What did I buy recently in \(.applicationName)"
-                ],
-                shortTitle: "Recent Expenses",
-                systemImageName: "clock"
-            ),
+            // Dialog
             AppShortcut(
                 intent: GetBudgetStatusIntent(),
                 phrases: [

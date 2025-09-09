@@ -73,32 +73,14 @@
         }
       }
     },
-    "Show recent expenses in ${applicationName}" : {
+    "Show expense in ${applicationName}" : {
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "en" : {
           "stringSet" : {
             "state" : "new",
             "values" : [
-              "Show recent expenses in ${applicationName}",
-              "Latest expenses in ${applicationName}",
-              "What did I buy recently in ${applicationName}"
-            ]
-          }
-        }
-      }
-    },
-    "Where do I spend the most in ${applicationName}" : {
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringSet" : {
-            "state" : "new",
-            "values" : [
-              "Where do I spend the most in ${applicationName}",
-              "Top category in ${applicationName}",
-              "Biggest expense category in ${applicationName}",
-              "What's my highest spending category in ${applicationName}"
+              "Show expense in ${applicationName}"
             ]
           }
         }

@@ -14,9 +14,9 @@ enum ExpensePresentationEnum: String, AppEnum {
     case chart = "Charts"
 
     static var typeDisplayRepresentation: TypeDisplayRepresentation = "Presentation"
-    static var caseDisplayRepresentations: [ExpensePresentationEnum: DisplayRepresentation] = [
-        .list: "List",
-        .chart: "Charts"
+    static var caseDisplayRepresentations: [Self: DisplayRepresentation] = [
+        .list: DisplayRepresentation(title: "List", image: .init(named: "ListIcon")),
+        .chart: DisplayRepresentation(title: "Charts", image: .init(named: "ChartsIcon"))
     ]
 }
 
@@ -62,13 +62,13 @@ struct ShowExpenseIntent: AppIntent {
      //@Dependecy var modelData: ModelData
 
     @Parameter(title: "Presentation")
-    var presentation: ExpensePresentationEntity
+    var presentation: ExpensePresentationEnum
 
     func perform() async throws -> some IntentResult {
-        if presentation.id == "List" {
+        switch presentation {
+        case .list:
             await deepLinkManager.navigateToExpenses()
-        }
-        if presentation.id == "Charts" {
+        case .chart:
             await deepLinkManager.navigateToCharts()
         }
         return .result()
@@ -80,7 +80,7 @@ struct ShowExpenseIntent: AppIntent {
 extension ShowExpenseIntent: Transferable {
     static var transferRepresentation: some TransferRepresentation {
         DataRepresentation(exportedContentType: .text) {
-            return $0.presentation.id.data(using: .utf8) ?? Data()
+            return $0.presentation.rawValue.data(using: .utf8) ?? Data()
         }
     }
 }
