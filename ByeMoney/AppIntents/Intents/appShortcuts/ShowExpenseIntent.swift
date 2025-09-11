@@ -49,6 +49,8 @@ struct PresentationQuery: EntityQuery {
     }
 }
 
+// MARK: - Intent
+
 struct ShowExpenseIntent: AppIntent {
     static var title: LocalizedStringResource = "Show expenses"
     static var description: IntentDescription? = "Show expense with differents presentations"
@@ -79,7 +81,7 @@ struct ShowExpenseIntent: AppIntent {
 
 extension ShowExpenseIntent: Transferable {
     static var transferRepresentation: some TransferRepresentation {
-        DataRepresentation(exportedContentType: .text) {
+        DataRepresentation(exportedContentType: .plainText) {
             return $0.presentation.rawValue.data(using: .utf8) ?? Data()
         }
     }

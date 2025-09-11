@@ -63,6 +63,9 @@ struct TotalExpenseView: View {
                         }
                     }
                 )
+
+            // Se puede adjuntar un Intent
+            Button("Show detail", intent: ShowExpenseIntent())
         }
         .padding()
     }
@@ -108,7 +111,7 @@ struct GetTotalSpentIntentWithPeriod: AppIntent {
 
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-        formatter.currencyCode = "USD"
+        formatter.currencyCode = "UY"
         let formattedTotal = formatter.string(from: NSNumber(value: total)) ?? "$\(total)"
 
         let periodText: String

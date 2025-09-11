@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import WidgetKit
+import _AppIntents_SwiftUI
 
 struct AddExpenseView: View {
     @Environment(\.dismiss) private var dismiss
@@ -57,6 +58,11 @@ struct AddExpenseView: View {
                     }
                     .foregroundColor(.white)
                     .listRowBackground(Color.blue)
+                }
+
+                // Ejemplo de discovery de shortCuts
+                Section {
+                    SiriTipView(intent: AddExpenseIntent())
                 }
             }
             .navigationTitle("Nuevo Gasto")

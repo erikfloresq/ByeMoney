@@ -82,6 +82,12 @@
         }
       }
     },
+    "Authenticate User" : {
+
+    },
+    "Authenticates the user with the specified method" : {
+
+    },
     "Budget Status" : {
 
     },
@@ -349,6 +355,9 @@
 
     },
     "Semana" : {
+
+    },
+    "Show detail" : {
 
     },
     "Show expense" : {
